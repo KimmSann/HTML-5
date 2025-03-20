@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    li::before{
+        content: "(프로그래밍)";
+        color: blue;
+
+    }
+    .required::after{
+        content: " *";
+        color: red;
+        font-weight: bold;
+
+    }
+    button::before{
+        content: "클릭하세요";
+        font-weight: bold;
+        color: green;
+    }
+</style>
+</head>
+<body>
+    <h3>해야 할 일</h3>
+    <ul>
+        <li>HTML 연습</li>
+        <li>CSS 공부</li>
+        <li>JavaScript 배우기</li>
+    </ul>
+
+    <h3>폼 입력</h3>
+    <form>
+        <label class="required">이름:</label>
+        <input type="text"><br><br>
+
+        <label class="required">이메일:</label>
+        <input type="text"><br><br>
+
+        <label >나이:</label>
+        <input type="number"><br><br>
+
+        <button type="submit">제출하기</button>
+    </form>
+    
+</body>
+</html>
